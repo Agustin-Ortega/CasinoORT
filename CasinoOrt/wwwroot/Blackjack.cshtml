@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CasinoOrt</title>
+    <link rel="stylesheet" href="~/css/estiloCasino.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+            <enlace href="https: //fonts.googleapis.com/css2? family= Beau+Rivage & display=swap" rel="hoja de estilo">
+</head>
+<body>
+    <header>
+        <table class="tabla">
+
+            <tr class="fila">
+                <th class="columna" id="titulo">
+                    <img id="logo" src="css/img/as.jpg">
+                    <a id="Titulo" class="link">Casino ORT</a>
+                </th>
+                <th class="columna" id="segunda">
+                    <a class="link" href="https://www.pokerstarscasino.com/es-419/about/responsible-gaming/">Juego Responsable</a>
+                </th>
+                <th class="columna" id="segunda">
+                    <a class="link">Como Funciona?</a>
+                </th>
+                <th class="columna" id="tercera">
+                    <a class="link">Iniciar Sesion</a>
+                </th>
+                <th class="columna" id="tercera">
+                    @*<a class="link">Unirse</a>*@
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Blackjack">Unirse</a>
+                </th>
+            </tr>
+        </table>
+        <br><br>
+        <table class="tabla2">
+
+            <tr class="fila">
+                <th class="columna2" id="mismoFondo">
+                    <a id="home" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                    @*<a id="mismaPag" class="link">Home</a>*@
+                </th>
+                <th class="columna" 2>
+                    <a class="link">BlackJack</a>
+                </th>
+                <th class="columna2">
+                    <a class="link">Tragamonedas</a>
+                </th>
+                <th class="columna2">
+                    <a class="link">Premios</a>
+                </th>
+            </tr>
+        </table>
+        <br><br>
+
+
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - CasinoOrt - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
