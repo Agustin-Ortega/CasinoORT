@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CasinoOrt</title>
-    <link rel="stylesheet" href="~/css/estiloCasino.css" />
+    <link rel="stylesheet" href="~/css/estiloCasino.css"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    @*<script src="trgamonedas.js"></script>*@
+    @*<link rel="stylesheet" href="~/css/site.css" />
+    <script src="trgamonedas.js"></script>*@
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
         <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
             <enlace href="https: //fonts.googleapis.com/css2? family= Beau+Rivage & display=swap" rel="hoja de estilo">
@@ -36,7 +36,7 @@
                 </th>
             </tr>
         </table>
-        <br><br>
+        <br>
         <table class="tabla2">
 
             <tr class="fila">
@@ -55,7 +55,7 @@
                 </th>
             </tr>
         </table>
-        <br><br>
+        <br>
 
 
     </header>
@@ -135,8 +135,6 @@
 
     </div>
 
-
-
     <br><br>
     <div class="tragamonedas">
 
@@ -207,84 +205,112 @@
     <br />
     <br />
 
-    <section id="juego">
+    @*<section id="minombre">
+        <h3>AGUSTIN</h3>
+    </section>*@
+
+<section id="juego">
+
+    <table class="tabla3">
+        <tr>
+            <th>
+                <h2>BlackJack</h2>
+            </th>
+            <th>
+                <button class="play" id="botonBK" onclick="play()">Play</button>
+            </th>
+        </tr>
+    </table>
+    <br />
+    <h2>Mesa: <span id="mesa-suma"></span></h2>
+    <div id="mesa-cartas">
+        @*<img id="hidden" src="img/cartas/BACK.png">*@
+        <img id="hidden" src="~/css/img/cartas/BACK.png" />
+    </div>
+    <br /><br />
+    <h2>Yo : <span id="usuario-suma"></span></h2>
+    <div id="usuario-cartas"></div>
+
+    <br>
+    <button class="boton1" id="hit">Pedir</button>
+    <span class="spam">----</span>
+    <button id="stay" class="boton1">Quedarse</button>
+    <p id="results"></p>
+
+</section>
+
+<section id="juego2">
 
 
-        <h2>JUEGO</h2>
-        <br />
-        <button id="botonBK" onclick="play()">Play</button>
-        <br />
-        <h2>Dealer: <span id="mesa-suma"></span></h2>
-        <div id="mesa-cartas">
-            @*<img id="hidden" src="img/cartas/BACK.png">*@
-            <img id="hidden" src="~/css/img/cartas/BACK.png" />
+    @*<h1 id="titulo3">TRAGAMONEDAS</h1>
+    <br />
+    <button class="play" id="botonTG" onclick="play2()">Play</button>
+    <br />*@
+
+    <table class="tabla3">
+        <tr>
+            <th>
+                <h1 id="titulo3">TRAGAMONEDAS</h1>
+            </th>
+            <th>
+                <button class="play" id="botonTG" onclick="play2()">Play</button>
+            </th>
+        </tr>
+    </table>
+    <br /><br />
+    <section id="ventanas">
+        <div class="ventana">
+            <div class="imagen">
+                <img src="~/css/img/formas/5.png">
+            </div>
         </div>
 
-        <h2>You: <span id="usuario-suma"></span></h2>
-        <div id="usuario-cartas"></div>
+        <div class="ventana">
+            <div class="imagen">
+                <img src="~/css/img/formas/5.png">
+            </div>
+        </div>
 
-        <br>
-        <button id="hit">Hit</button>
-        <button id="stay">Stay</button>
-        <p id="results"></p>
+        <div class="ventana">
+            <div class="imagen">
+                <img src="~/css/img/formas/5.png" />
+            </div>
+        </div>
 
     </section>
 
-                <section id="juego2">
-                    <h1 id="titulo3">TRAGAMONEDAS</h1>
-                    <br />
-                    <button id="botonTG" onclick="play2()">Play</button>
-                    <br />
-                    <section id="ventanas">
-                        <div class="ventana">
-                            <div class="imagen">
-                                <img src="~/css/img/formas/5.png">
-                            </div>
-                        </div>
+    <section id="capsula">
+        <div id="linea1">
+            <div id="credito">Credito: </div>
+            <div id="pesos">$</div>
+            <div id="dinero"></div>
 
-                        <div class="ventana">
-                            <div class="imagen">
-                                <img src="~/css/img/formas/5.png">
-                            </div>
-                        </div>
+            <div id="tirar">Tirar</div>
+        </div>
+    </section>
 
-                        <div class="ventana">
-                            <div class="imagen">
-                                <img src="~/css/img/formas/5.png" />
-                            </div>
-                        </div>
+    <div id="velo">
+        <div id="cuadro_mensaje">
+            <img id="cruz" src="~/css/img/formas/cruz.png">
+            <div id="mensaje">
+            </div>
+        </div>
+    </div>
 
-                    </section>
-
-                    <section id="capsula">
-                        <div id="linea1">
-                            <div id="credito">Credito: </div>
-                            <div id="pesos">$</div>
-                            <div id="dinero"></div>
-
-                            <div id="tirar">Tirar</div>
-                        </div>
-                    </section>
-
-                    <div id="velo">
-                        <div id="cuadro_mensaje">
-                            <img id="cruz" src="~/css/img/formas/cruz.png">
-                            <div id="mensaje">
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
+</section>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - CasinoOrt - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - Casino Ort - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p class="nombres">Paloma Ferrero - Agustin Ortega</p>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false);
+
 </body>
+
 </html>

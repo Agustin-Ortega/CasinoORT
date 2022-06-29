@@ -23,7 +23,7 @@ function play() {
     buildDeck();
     shuffleDeck();
     startGame();
-    document.getElementById("usuario-cartas").append("       MIS CARTAS");
+   /* document.getElementById("usuario-cartas").append("       MIS CARTAS");*/
 }
 
 //window.onload = function () {
@@ -142,7 +142,7 @@ function quedarse() {
 
     let message = "";
     if (usuarioSuma > 21) {
-        message = "Gana la casa!";
+        message = "Te pasaste! Gana la casa";
     }
     else if (mesaSuma > 21) {
         message = "Gana el jugador";
@@ -152,10 +152,10 @@ function quedarse() {
         message = "Empate!";
     }
     else if (usuarioSuma > mesaSuma) {
-        message = "Gana el jugador!";
+        message = "Por poco. Gana el jugador!";
     }
     else if (usuarioSuma < mesaSuma) {
-        message = "Gana la Casa!";
+        message = "Estuviste cerca. Gana la Casa!";
     }
 
     // mostramos la suma total de numeros de cada jugador

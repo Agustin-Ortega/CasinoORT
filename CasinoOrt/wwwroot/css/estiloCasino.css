@@ -1,8 +1,9 @@
 ﻿
 /* Mi agregado
--------------------------------------------------- */
+-------------------------------------------------- *//**/
 html {
     font-family: 'Montserrat', sans-serif;
+  
 }
 
 #logo {
@@ -12,9 +13,9 @@ html {
 header {
     color: aliceblue;
     background-color: black;
-    /*padding: 3rem 2rem;*/
     background-position: top;
-   
+    padding-right:15rem;
+   position:fixed;
 }
 
 #home{
@@ -25,13 +26,11 @@ body {
     background-image: url("img/fondoVioleta.jpg");
     background-attachment: fixed;
     background-position: center left;
+  
 }
 
 .tabla {
-/*     margin: 0 auto;*/
     width: 50cm; 
-  /*  margin: 0 2;
-    width: 50cm;*/
     border-collapse: collapse;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 th {
-    /*   border: solid 1px rgba(255, 127, 80, 0.212); */
 
     font-size: medium;
     color: rgba(255, 255, 255, 0.74);
@@ -136,7 +134,6 @@ th {
 }
 
 
-
 #mesa-cartas img {
     height: 175px;
     width: 125px;
@@ -150,34 +147,116 @@ th {
 }
 
 #hit {
+    font-family: 'Montserrat', sans-serif;
     width: 100px;
-    height: 50px;
-    font-size: 20px;
+    height: 30px;
+    color: antiquewhite;
+    border-radius: 12px;
+    border-color: rgba(95, 6, 6, 0);
+    font-size: medium;
+    background-color: rgb(95, 6, 6);
 }
 
 #stay {
+    font-family: 'Montserrat', sans-serif;
     width: 100px;
-    height: 50px;
-    font-size: 20px;
+    height: 30px;
+    border-color: rgba(95, 6, 6, 0);
+    color: antiquewhite;
+    border-radius: 12px;
+    font-size: medium;
+    background-color: rgb(95, 6, 6);
 }
 
 section {
     text-align: center;
     color: antiquewhite;
+    
+}
+
+.spam {
+    opacity: 0;
+}
+
+#hit:hover {
+    transition: all 0.8s;
+    background-color: rgb(170, 13, 13);
+}
+#stay:hover {
+    transition: all 0.8s;
+    background-color: rgb(170, 13, 13);
+}
+
+#hit {
+    /* width: 150px;
+    height: 30px;
+    background-color: rgb(95, 6, 6);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    user-select: none;
+    cursor: pointer;
+    margin: auto;
+    top: 30px;*/
+}
+
+.play {
+    font-family: 'Montserrat', sans-serif;
+    width: 40px;
+    height: 20px;
+    color: black;
+    background-color: greenyellow;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    border-color: rgba(250, 235, 215, 0);
+    user-select: none;
+    cursor: pointer;
+    margin: auto;
+    top: 30px;
+}
+ .play:hover {
+        transition: all 0.8s;
+        background-color: black;
+        color:antiquewhite;
+    }
+
+
+
+.tabla3{
+    margin: 0 auto;
+}
+
+.tabla3 th {
+    padding-top:3rem;
+    padding-left:2rem;
 }
 
 
-/* tragamonedas */
 
+
+
+
+
+
+
+
+
+/* tragamonedas */
 img {
     max-width: 100%;
     vertical-align: top;
 }
 
 #juego2 {
+    padding-top:5rem;
     font-family: "Pacifico";
     margin: auto;
-    width: 550px
+    width: 550px;
 }
  
 #linea1 {
@@ -200,15 +279,14 @@ img {
 }
 
 #tirar {
-    width: 125px;
-    height: 80px;
-    background-color: #ecb1b1;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(95, 6, 6);
     border-radius: 12px;
-    border: 2px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: large;
     user-select: none;
     cursor: pointer;
     position: left;
@@ -222,12 +300,12 @@ img {
 
 
 #tirar:hover {
-    background-color: white;
-    box-shadow: 0 0 13px rgb(220, 50, 20) inset;
+    transition: all 0.8s;
+    background-color: rgb(170, 13, 13);
 }
 
 #titulo3 {
-    padding-top:5rem;
+    /*padding-top:5rem;*/
     text-align: center;
     color: antiquewhite;
 }
@@ -285,4 +363,23 @@ img {
 
 .subtitulo {
     color: black;
+}
+
+/*no me lo toma*/ 
+
+footer {
+   
+    color:antiquewhite;
+    margin-top:5rem;
+    background-color:black;
+    padding-top:1rem;
+    padding-bottom:3rem;
+}
+
+#minombre {
+    text-align:center;
+    color:green;
+    text-decoration:double;
+    font-size:x-large;
+    
 }
