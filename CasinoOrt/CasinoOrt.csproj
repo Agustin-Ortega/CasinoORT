@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20220623031549_CasinoOrt.Context.CasinoContext.cs" />
     <Compile Remove="Migrations\20220623031549_CasinoOrt.Context.CasinoContext.Designer.cs" />
+    <Compile Remove="Migrations\20220625203331_add-migration seguna.cs" />
+    <Compile Remove="Migrations\20220625203331_add-migration seguna.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

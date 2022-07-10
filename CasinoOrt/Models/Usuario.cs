@@ -19,7 +19,7 @@ namespace CasinoOrt.Models
 
         [Required(ErrorMessage ="Ingrese el nombre de usuario")]
         [Display(Name ="Nombre de Usuario")]
-        [StringLength(5)]
+        [StringLength(10)]
         public string nombreUsuario { get; set; }
         [Required(ErrorMessage = "Ingrese la contraseña")]
         public string contraseña { get; set; }
@@ -27,9 +27,7 @@ namespace CasinoOrt.Models
         [Required(ErrorMessage = "Ingrese su nombre")]
         [StringLength(10)]
         public string nombre { get; set; }
-
         [Required]
-        public int? InformeId { get; set; }
-        public Informe Informe { get; set; }
+        public int monto { get; set; }
     }
 }

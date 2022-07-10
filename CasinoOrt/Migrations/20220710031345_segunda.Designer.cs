@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CasinoOrt.Migrations
 {
     [DbContext(typeof(CasinoContext))]
-    [Migration("20220625203331_add-migration seguna")]
-    partial class addmigrationseguna
+    [Migration("20220710031345_segunda")]
+    partial class segunda
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,31 +20,16 @@ namespace CasinoOrt.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CasinoOrt.Models.Informe", b =>
+            modelBuilder.Entity("CasinoOrt.Models.Blackjack", b =>
                 {
-                    b.Property<int>("InformeId")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("cantGanadas")
-                        .HasColumnType("int");
+                    b.HasKey("id");
 
-                    b.Property<int>("cantPerdidas")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ganancia")
-                        .HasColumnType("int");
-
-                    b.Property<int>("montoInicial")
-                        .HasColumnType("int");
-
-                    b.Property<int>("montoPerdida")
-                        .HasColumnType("int");
-
-                    b.HasKey("InformeId");
-
-                    b.ToTable("informes");
+                    b.ToTable("Blackjack");
                 });
 
             modelBuilder.Entity("CasinoOrt.Models.Usuario", b =>
@@ -54,35 +39,26 @@ namespace CasinoOrt.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("InformeId")
-                        .HasColumnType("int");
-
                     b.Property<string>("contraseña")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("monto")
+                        .HasColumnType("int");
+
                     b.Property<string>("nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
 
                     b.Property<string>("nombreUsuario")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
 
                     b.HasKey("id");
 
-                    b.HasIndex("InformeId");
-
                     b.ToTable("usuarios");
-                });
-
-            modelBuilder.Entity("CasinoOrt.Models.Usuario", b =>
-                {
-                    b.HasOne("CasinoOrt.Models.Informe", "Informe")
-                        .WithMany()
-                        .HasForeignKey("InformeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

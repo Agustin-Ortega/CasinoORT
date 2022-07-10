@@ -19,11 +19,23 @@ namespace CasinoOrt.Controllers
             _context = context;
         }
 
+
+
+        //public IActionResult montoTotal()
+        //{
+        //    int cant = 0;
+
+        //    cant = _context.usuarios.Count();
+
+        //    viwe
+        //}
+
+
+
         // GET: Usuarios
         public async Task<IActionResult> Index()
         {
-            var casinoContext = _context.usuarios.Include(u => u.Informe);
-            return View(await casinoContext.ToListAsync());
+            return View(await _context.usuarios.ToListAsync());
         }
 
         // GET: Usuarios/Details/5
@@ -35,7 +47,6 @@ namespace CasinoOrt.Controllers
             }
 
             var usuario = await _context.usuarios
-                .Include(u => u.Informe)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (usuario == null)
             {
@@ -48,7 +59,6 @@ namespace CasinoOrt.Controllers
         // GET: Usuarios/Create
         public IActionResult Create()
         {
-            ViewData["InformeId"] = new SelectList(_context.informes, "InformeId", "InformeId");
             return View();
         }
 
@@ -57,7 +67,7 @@ namespace CasinoOrt.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,nombreUsuario,contraseña,nombre,InformeId")] Usuario usuario)
+        public async Task<IActionResult> Create([Bind("id,nombreUsuario,contraseña,nombre,monto")] Usuario usuario)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +75,6 @@ namespace CasinoOrt.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["InformeId"] = new SelectList(_context.informes, "InformeId", "InformeId", usuario.InformeId);
             return View(usuario);
         }
 
@@ -82,16 +91,24 @@ namespace CasinoOrt.Controllers
             {
                 return NotFound();
             }
-            ViewData["InformeId"] = new SelectList(_context.informes, "InformeId", "InformeId", usuario.InformeId);
             return View(usuario);
         }
+
+
+        //public async IActionResult modificarMonto(int? id, int monto)
+        //{
+        //    var usuario = await _context.usuarios.FindAsync(id);
+        //    usuario.monto += monto;
+        //    _context.SaveChanges();
+        //}
+
 
         // POST: Usuarios/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,nombreUsuario,contraseña,nombre,InformeId")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("id,nombreUsuario,contraseña,nombre,monto")] Usuario usuario)
         {
             if (id != usuario.id)
             {
@@ -102,6 +119,13 @@ namespace CasinoOrt.Controllers
             {
                 try
                 {
+                    var usuarioNuevo = await _context.usuarios.FindAsync(id);
+                    if (usuarioNuevo!=null)
+                    {
+                        usuarioNuevo.monto += usuario.monto;
+                    }
+
+                    //usuario.monto += monto;
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }
@@ -118,7 +142,6 @@ namespace CasinoOrt.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["InformeId"] = new SelectList(_context.informes, "InformeId", "InformeId", usuario.InformeId);
             return View(usuario);
         }
 
@@ -131,7 +154,6 @@ namespace CasinoOrt.Controllers
             }
 
             var usuario = await _context.usuarios
-                .Include(u => u.Informe)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (usuario == null)
             {

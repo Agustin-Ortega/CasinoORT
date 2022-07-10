@@ -44,11 +44,20 @@ namespace CasinoOrt
 
            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
+            services.AddDistributedMemoryCache();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(1);//si quieren que la sesión expire luego de determinado tiempo  
+            });
+            services.AddMvc();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSession();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

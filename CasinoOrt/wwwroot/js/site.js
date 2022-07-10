@@ -163,6 +163,7 @@ function quedarse() {
     document.getElementById("usuario-suma").innerText = usuarioSuma;
     // mensaje del resultado
     document.getElementById("results").innerText = message;
+    
 }
 
 function valorCarta(card) {
@@ -206,11 +207,13 @@ var premios = [];
 var numeros_actuales = [];
 
 function play2() {
-     credito = Math.floor(Math.random() * 4) + 9;
+     credito = Math.floor(Math.random() * 30) + 10;
      imagenes = ["1.png", "2.png", "4.png", "5.png", "7.png", "8.png"];
-     premios = [3, 2, 3, 7, 2, 8];
+    /* premios = [3, 2, 3, 7, 2, 8];*/
+    premios = [24, 12, 24, 56, 12, 84];
      numeros_actuales = [];
     inicio();
+   
 }
 
 //window.onload = inicio;
@@ -220,9 +223,11 @@ function play2() {
 //var numeros_actuales = [];
 
 function inicio() {
+
     document.getElementById("tirar").onclick = lanzar_inicio;
     document.getElementById("cruz").onclick = cerrar;
     actualizar();
+   
 }
 
 function lanzar_inicio() {
@@ -255,6 +260,7 @@ function comparar() {
     }
     // le saca una moneda
     credito--;
+
     actualizar();
 }
 

@@ -1,21 +1,26 @@
 ﻿
 /* Mi agregado
 -------------------------------------------------- *//**/
-html {
+/*html {
     font-family: 'Montserrat', sans-serif;
   
-}
+}*/
 
-#logo {
+/*#saludo{
+    text-align : center;
+    color : crimson;
+
+}
+*/
+/*#logo {
     width: 4%;
 }
 
-header {
+#cabecera {
     color: aliceblue;
     background-color: black;
     background-position: top;
-    padding-right:15rem;
-   position:fixed;
+    padding-right: 150rem;
 }
 
 #home{
@@ -26,7 +31,6 @@ body {
     background-image: url("img/fondoVioleta.jpg");
     background-attachment: fixed;
     background-position: center left;
-  
 }
 
 .tabla {
@@ -187,7 +191,30 @@ section {
     background-color: rgb(170, 13, 13);
 }
 
-#hit {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hit {*/
     /* width: 150px;
     height: 30px;
     background-color: rgb(95, 6, 6);
@@ -200,7 +227,21 @@ section {
     cursor: pointer;
     margin: auto;
     top: 30px;*/
-}
+/*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .play {
     font-family: 'Montserrat', sans-serif;
@@ -225,6 +266,9 @@ section {
         color:antiquewhite;
     }
 
+#hidden {
+    box-shadow: 2px 1px 7px rgb(255, 255, 255);
+}
 
 
 .tabla3{
@@ -236,18 +280,25 @@ section {
     padding-left:2rem;
 }
 
+.cajaApuesta {
+    background-color: #1b1b1b;
+    color: rgb(167, 164, 164);
+    border-collapse: collapse;
+    border-radius: 7px;
+    opacity: 0.8;
+}
 
-
-
-
-
+.cajaApuesta:hover {
+        transition: all 0.5s ease;
+        box-shadow: 1px 1px 7px rgb(255, 255, 255);
+    }*/
 
 
 
 
 
 /* tragamonedas */
-img {
+/*img {
     max-width: 100%;
     vertical-align: top;
 }
@@ -304,9 +355,9 @@ img {
     background-color: rgb(170, 13, 13);
 }
 
-#titulo3 {
+#titulo3 {*/
     /*padding-top:5rem;*/
-    text-align: center;
+    /*text-align: center;
     color: antiquewhite;
 }
 
@@ -363,11 +414,11 @@ img {
 
 .subtitulo {
     color: black;
-}
+}*/
 
 /*no me lo toma*/ 
 
-footer {
+/*footer {
    
     color:antiquewhite;
     margin-top:5rem;
@@ -382,4 +433,4 @@ footer {
     text-decoration:double;
     font-size:x-large;
     
-}
+}*/

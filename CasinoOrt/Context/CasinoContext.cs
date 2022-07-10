@@ -16,6 +16,7 @@ namespace CasinoOrt.Context
         }
 
         public DbSet<Usuario> usuarios { get; set; }
-        public DbSet<Informe> informes { get; set; }
+
+        public DbSet<Blackjack> Blackjack { get; set; }
     }
 }
