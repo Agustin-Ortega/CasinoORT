@@ -82,6 +82,13 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+header {
+    background-color: black;
+    position:fixed;
+    /*margin-bottom:30rem;*/
+    padding-right:100rem;
+}
+
 #saludo{
     padding-top: 5rem;
     text-align : center;
@@ -92,16 +99,9 @@ html {
 }
 
 #logo {
-    width: 2%;
+    width: 5%;
 }
 
-#cabecera {
-    background-color: black;
-    border-collapse:collapse;
-    animation : none;
-   
-    
-}
 
 #home {
     color: aliceblue;
@@ -159,7 +159,7 @@ th {
 }
 
 .blackjack {
-    padding-top: 3rem;
+    padding-top: 10rem;
     margin-left: 5rem;
 }
 
@@ -189,9 +189,16 @@ th {
    /* margin-left: 45rem;*/
 }
 
-.foto2 {
-    width: 21rem;
+/*.foto2 {
+    width:20rem;
     border-radius: 5px;
+}*/
+
+#foto2
+{
+    width : 20rem;
+    border-radius : 5px;
+
 }
 
 .tablabk {
@@ -269,9 +276,9 @@ section {
     background-color: rgb(170, 13, 13);
 }
 
-
-
-
+#juego {
+    margin-top:8rem;
+}
 
 
 
@@ -383,7 +390,7 @@ img {
 }
 
 #juego2 {
-    padding-top: 5rem;
+    padding-top: 8rem;
     font-family: "Pacifico";
     margin: auto;
     width: 550px;
@@ -503,6 +510,11 @@ footer {
     background-color: black;
     padding-top: 1rem;
     padding-bottom: 3rem;
+}
+
+footer{
+    margin-top:20rem;
+    color:antiquewhite;
 }
 
 #minombre {

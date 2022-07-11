@@ -19,6 +19,37 @@ namespace CasinoOrt.Controllers
             _context = context;
         }
 
+        //public ActionResult index(string message = "")
+        //{
+        //    ViewBag.Message = message;
+        //    return View();
+        //}
+
+        //[HttpPost]
+        //public IActionResult Login(string usuario, string password)
+        //{
+        //    if(!string.IsNullOrEmpty(usuario) && !string.IsNullOrEmpty(password))
+        //    {
+        //       var user = _context.usuarios.FirstOrDefault(e => e.nombreUsuario == usuario && e.contraseña == password);
+            
+                
+        //        if(user != null)
+        //        {
+        //            return RedirectToAction("Index");
+        //        }
+        //        else
+        //        {
+        //            return RedirectToAction("Index");
+        //        }
+            
+        //    }
+        //    else
+        //    {
+        //        return  RedirectToAction("Index");
+        //    }
+
+        //    return View();
+        //}
 
 
         //public IActionResult montoTotal()
@@ -37,6 +68,8 @@ namespace CasinoOrt.Controllers
         {
             return View(await _context.usuarios.ToListAsync());
         }
+
+      
 
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -9,7 +9,7 @@ namespace CasinoOrt.Context
 {
     public class CasinoContext : DbContext
     {
-
+      
         public CasinoContext(DbContextOptions<CasinoContext> options) : base(options)
         {
 
@@ -18,5 +18,6 @@ namespace CasinoOrt.Context
         public DbSet<Usuario> usuarios { get; set; }
 
         public DbSet<Blackjack> Blackjack { get; set; }
+
     }
 }
