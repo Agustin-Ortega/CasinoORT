@@ -37,8 +37,8 @@ namespace CasinoOrt.Controllers
                     if (user != null)
                     {
                     HttpContext.Session.SetString("usuario",usuario);
-                    return RedirectToAction(nameof(Login));
-                    //return RedirectToAction("Index");
+                    //return RedirectToAction(nameof(Login));
+                    return RedirectToAction("Index" , "Home");
 
                 }
                     else
