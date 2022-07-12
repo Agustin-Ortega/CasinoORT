@@ -1,4 +1,81 @@
 ﻿
+
+
+/*LOGIN*/
+
+.formLogin {
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.loginCaja {
+    background-color: #1b1b1b;
+    color: rgb(167, 164, 164);
+    border-collapse: collapse;
+    border-radius: 7px;
+    opacity: 0.8;
+    box-shadow: antiquewhite;
+    width: 230px;
+}
+
+    .loginCaja:hover {
+        transition: all 0.5s ease;
+        box-shadow: 1px 1px 7px rgb(255, 255, 255);
+    }
+
+
+#tituloUsuario 
+{
+    margin-top: 15rem;
+}
+
+.loginTitulo {
+    color: #750a06;
+    background-color: rgba(255, 255, 255, 0.596);
+    width: 140px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.loginBoton {
+    color: antiquewhite;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(95, 6, 6);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    user-select: none;
+    cursor: pointer;
+    top: 30px;
+    
+    border-color: rgba(167, 164, 164, 0);
+    
+}
+.loginBoton:hover {
+        transition: all 0.8s;
+        background-color: rgb(170, 13, 13);
+    }
+
+
+#subtitulo {
+    margin-top:20px;
+    margin-bottom:10rem;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+    color: #750a06;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 8px;
+    width:350px;
+}
+
+
+
+
+
 /* Mi agregado
 -------------------------------------------------- *//**/
 /*html {

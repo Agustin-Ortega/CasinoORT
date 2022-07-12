@@ -17,5 +17,10 @@ namespace CasinoOrt.Controllers
         {
             return View();
         }
+
+        public IActionResult paginaPrincipal()
+        {
+            return View();
+        }
     }
 }

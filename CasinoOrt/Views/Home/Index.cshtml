@@ -14,96 +14,120 @@
 
 
 
-<div class="blackjack">
+<form class="formLogin">
 
-    <table>
-        <h2 class="titulobk">Blackjack</h2>
-        <tr>
-            <th>
-                <img class="foto1" src="~/css/img/bk.jpg" />
-            </th>
-            <th class="columnabk">
-                <p>
-                    El blackjack, también llamado veintiuno, es un juego de cartas, propio de los casinos con <br />
-                    una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor<br />
-                    lo más próximo a 21 pero sin pasarse
-                </p>
-            </th>
-        </tr>
-    </table>
-
-</div>
-
-<br>
-<br>
-<div class="tragamonedas">
-
-    <h2 class="titulotg">Tragamonedas</h2>
-    <table>
-        <tr>
-            <th class="columnabk">
-                <p>
-                    Las máquinas tragamonedas​,conocidas en inglés como slots o video slots,
-                    <br> son máquinas de juegos de azar donde se apuesta cierta cantidad de dinero <br>
-                    para ganar un premio en efectivo
-                </p>
-            </th>
-     
-            <th>
-                <img id="foto2" src="css/img/tg.jpg">
-            </th>
-
-        </tr>
-    </table>
-</div>
-
-
-<br />
-<br />
-@*<h3 id="saludo">HOLA COMO VA ?</h3>*@
-
-<section class="opciones">
 
     <div>
-        <h3>Mesas de BlackJack</h3>
-        <table class="mesa">
-            <tr>
+        <label id="tituloUsuario" class="loginTitulo" for="usuario"> Usuario</label>
+        <br>
+        <input class="loginCaja" type="text" id="usuario" name="usuario" placeholder="Ingrese su nombre de usuario" />
+    </div>
+    <br><br />
+    <div>
+        <label class="loginTitulo" for="password">Password</label>
+        <br>
+        <input class="loginCaja" type="password" id="password" name="password" placeholder="Ingrese su password" />
+    </div>
+    <br><br />
+    <button class="loginBoton" type="submit" onclick="validarContacto()">Ingresar</button>
 
-                <th class="espacio">
-                    <img class="foto3" src="css/img/bk1.jpg">
+    <h1 id="subtitulo">"Recuerde que si mintio para jugar, ya no es un juego"</h1>
+
+</form>
+
+
+
+
+@*<div class="blackjack">
+
+        <table>
+            <h2 class="titulobk">Blackjack</h2>
+            <tr>
+                <th>
+                    <img class="foto1" src="~/css/img/bk.jpg" />
                 </th>
-                <th class="espacio">
-                    <img class="foto3" src="css/img/bk2.jpg">
-                </th>
-                <th class="espacio">
-                    <img class="foto3" src="css/img/bk3.jpg">
+                <th class="columnabk">
+                    <p>
+                        El blackjack, también llamado veintiuno, es un juego de cartas, propio de los casinos con <br />
+                        una o más barajas inglesas de 52 cartas sin los comodines, que consiste en sumar un valor<br />
+                        lo más próximo a 21 pero sin pasarse
+                    </p>
                 </th>
             </tr>
         </table>
 
     </div>
+
+    <br>
+    <br>
+    <div class="tragamonedas">
+
+        <h2 class="titulotg">Tragamonedas</h2>
+        <table>
+            <tr>
+                <th class="columnabk">
+                    <p>
+                        Las máquinas tragamonedas​,conocidas en inglés como slots o video slots,
+                        <br> son máquinas de juegos de azar donde se apuesta cierta cantidad de dinero <br>
+                        para ganar un premio en efectivo
+                    </p>
+                </th>
+
+                <th>
+                    <img id="foto2" src="css/img/tg.jpg">
+                </th>
+
+            </tr>
+        </table>
+    </div>
+
+
     <br />
-    <div>
-        <h3>Maquinas Disponibles</h3>
-        <table class="mesa">
-            <tr>
-                <th class="espacio">
-                    <img class="foto3" src="css/img/tg1.jpg">
-                </th>
-                <th class="espacio">
-                    <img class="foto3" src="css/img/tg2.jpg">
-                </th>
-                <th class="espacio">
-                    <img class="foto3" src="css/img/tg3.jpg">
-                </th>
-            </tr>
-        </table>
+    <br />
 
-    </div>
 
-</section>
+    <section class="opciones">
 
-<br />
-<br />
-<br />
+        <div>
+            <h3>Mesas de BlackJack</h3>
+            <table class="mesa">
+                <tr>
+
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/bk1.jpg">
+                    </th>
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/bk2.jpg">
+                    </th>
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/bk3.jpg">
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+        <br />
+        <div>
+            <h3>Maquinas Disponibles</h3>
+            <table class="mesa">
+                <tr>
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/tg1.jpg">
+                    </th>
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/tg2.jpg">
+                    </th>
+                    <th class="espacio">
+                        <img class="foto3" src="css/img/tg3.jpg">
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+
+    </section>
+
+    <br />
+    <br />
+    <br />*@
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CasinoOrt</title>
-    @*<link rel="stylesheet" href="~/css/estiloCasino.css"/>*@
+    <link rel="stylesheet" href="~/css/estiloCasino.css"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @*<script src="trgamonedas.js"></script>*@
@@ -30,7 +30,7 @@
                     <a class="link">Como Funciona?</a>
                 </th>
                 <th class="columna" id="tercera">
-                    <a class="link"asp-area="" asp-controller="Home" asp-action="Login" >Iniciar Sesion</a>
+                    <a class="link"asp-area="" asp-controller="Home" asp-action="index" >Iniciar Sesion</a>
                 </th>
                 <th class="columna" id="tercera">
                     @*<a class="link">Unirse</a>*@
@@ -43,7 +43,7 @@
 
             <tr class="fila">
                 <th class="columna2" id="mismoFondo">
-                    <a id="home" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                    <a id="home" class="navbar-brand" asp-area="" asp-controller="juego" asp-action="paginaPrincipal">Inicio</a>
                     @*<a id="mismaPag" class="link">Home</a>*@
                 </th>
                 <th class="columna2">
