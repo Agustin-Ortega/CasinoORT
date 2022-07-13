@@ -279,3 +279,65 @@ function mostrar_mensaje(mensaje) {
 function cerrar() {
     document.getElementById("velo").style.display = "none";
 }
+
+
+/*LOGIN*/
+
+const input1 = document.querySelector("#usuario");
+const input2 = document.querySelector("#password");
+
+input1.required = "required";
+input2.required = "required";
+input1.minLength = 4;
+input1.maxLength = 12;
+input2.minLength = 3;
+input2.maxLength = 12;
+
+
+function verficar() {
+
+    var usuario = input1.value;
+    var clave = input2.value;
+
+    if (validarUsuario(usuario, clave)) {
+        alert("Ingresando al sistema. Bienvenido/a " + usuario);
+    }
+    else {
+        alert("Los datos son incorrectos, revise los campos o registre en la aplicacion");
+    }
+
+
+}
+
+function validarUsuario(usuario, clave) {
+    if (usuario == "eltrucho" && clave == "1234" || usuario == "paloF" && clave == "555") {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CREAR USUARIO*/

@@ -5,57 +5,89 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section id="cabecera">
 
-    <table class="tabla2">
+<br /><br /><br /><br /><br />
+                        <form asp-action="Create">
+                            <table class="tablaLogin">
 
-        <tr class="fila">
-            <th class="columna2" id="mismoFondo">
-                <a id="link" class="navbar-brand" asp-area="" asp-controller="juego" asp-action="paginaPrincipal">Inicio</a>
-                @*<a id="mismaPag" class="link">Home</a>*@
-            </th>
-        </tr>
-    </table>
-</section>
+                                <tr>
+                                    <th>
+                                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<h1>Create</h1>
+                                        <div class="form-group">
+                                            <h4 id="subtitulo2">Crear Usuario</h4>
+                                            <br />
+                                            <label class="loginTitulo" asp-for="nombreUsuario" >Nombre de Usuario</label>
+                                            <br />
+                                            <input class="loginCaja" asp-for="nombreUsuario" placeholder="ingrese nombre de usuario">
+                                            <span asp-validation-for="nombreUsuario" class="text-danger"></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
 
-<h4>Usuario</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="nombreUsuario" class="control-label"></label>
-                <input asp-for="nombreUsuario" class="form-control" />
-                <span asp-validation-for="nombreUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="contraseña" class="control-label"></label>
-                <input asp-for="contraseña" class="form-control" />
-                <span asp-validation-for="contraseña" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
-                <input asp-for="nombre" class="form-control" />
-                <span asp-validation-for="nombre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="monto" class="control-label"></label>
-                <input asp-for="monto" class="form-control" />
-                <span asp-validation-for="monto" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+                                        <div class="form-group">
+                                            <label class="loginTitulo" asp-for="contraseña">Contraseña</label>
+                                            <br />
+                                            <input type="password" class="loginCaja" asp-for="contraseña"  placeholder="ingrese su contraseña"/>
+                                            <span asp-validation-for="contraseña" class="text-danger"></span>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <br />
+                                        <div class="form-group">
+                                            <label class="loginTitulo" asp-for="nombre">Nombre</label>
+                                            <br />
+                                            <input class="loginCaja" asp-for="nombre" placeholder="ingrese nombre"/>
+                                            <span asp-validation-for="nombre" class="text-danger"></span>
+                                        </div>
+                                        <br />
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="form-group">
+                                            <label class="loginTitulo" asp-for="monto" >Monto</label>
+                                            <br />
+                                            <input class="loginCaja" asp-for="monto" placeholder="ingrese el monto"/>
+                                            <span asp-validation-for="monto" class="text-danger"></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+
+                                       
+
+                                        <div class="form-group">
+
+                                            <input id="loginBoton" type="submit" value="Crear" class="btn btn-primary" />
+
+                                        </div>
+                                    </th>
+
+
+
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="centrarLink">
+
+                                            <a class="link" asp-controller="juego" asp-action="paginaPrincipal"> Ir a la Pagina Principal</a>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                            </table>
+                            <br /><br />
+                        </form>
+                        <br /><br />
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
