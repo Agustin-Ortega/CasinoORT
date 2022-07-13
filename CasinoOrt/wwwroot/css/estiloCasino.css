@@ -7,6 +7,13 @@
     font-size: medium;
     font-family: 'Montserrat', sans-serif;
    
+   
+}
+
+.tablaLogin
+{
+    margin: 0 auto;
+    text-align: center;
 }
 
 .loginCaja {
@@ -25,9 +32,37 @@
     }
 
 
-#tituloUsuario 
+/*#tituloUsuario 
 {
-    margin-top: 15rem;
+    margin-top: 10rem;
+}*/
+
+#formulario {
+    margin-top: 2rem;
+}
+
+#fotoLogo {
+    width: 70px;
+    border-radius: 5px;
+    margin-right:10px;
+    opacity: 0.9;
+    box-shadow: 2px 2px 7px rgb(255, 255, 255);
+}
+
+.tituloLogo
+{
+    margin: auto auto;
+}
+
+.tituloCasino {
+    color: antiquewhite;
+    width: 500px;
+    height: 40px;
+    border-radius: 12px;
+ /*   box-shadow: 2px 3px 7px antiquewhite;*/
+    font-family: 'Montserrat', sans-serif;
+  /*  color: #750a06;*/
+    opacity:0.8;
 }
 
 .loginTitulo {
@@ -38,477 +73,49 @@
     border-radius: 7px;
 }
 
-.loginBoton {
+#loginBoton {
     color: antiquewhite;
     width: 120px;
     height: 30px;
     background-color: rgb(95, 6, 6);
     border-radius: 12px;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: medium;
     user-select: none;
     cursor: pointer;
     top: 30px;
-    
-    
     border-color: rgba(167, 164, 164, 0);
-    
+
+
 }
-.loginBoton:hover {
+#loginBoton:hover {
         transition: all 0.8s;
         background-color: rgb(170, 13, 13);
     }
 
+#centrar{
+    margin : 0 auto;
+    text-align :center;
+    position:center;
+}
 
 #subtitulo {
     margin-top:20px;
-    margin-bottom:10rem;
+    margin-bottom:12rem;
     font-size: small;
     font-family: 'Montserrat', sans-serif;
     color: #750a06;
     background-color: rgba(255, 255, 255, 0.801);
     border-radius: 8px;
     width:350px;
-}
-
-
-
-
-
-/* Mi agregado
--------------------------------------------------- *//**/
-/*html {
-    font-family: 'Montserrat', sans-serif;
-  
-}*/
-
-/*#saludo{
-    text-align : center;
-    color : crimson;
-
-}
-*/
-/*#logo {
-    width: 4%;
-}
-
-#cabecera {
-    color: aliceblue;
-    background-color: black;
-    background-position: top;
-    padding-right: 150rem;
-}
-
-#home{
-    color:aliceblue;
-}
-
-body {
-    background-image: url("img/fondoVioleta.jpg");
-    background-attachment: fixed;
-    background-position: center left;
-}
-
-.tabla {
-    width: 50cm; 
-    border-collapse: collapse;
-}
-
-.link {
-    color: aliceblue;
-    text-decoration: none;
-}
-
-th {
-
-    font-size: medium;
-    color: rgba(255, 255, 255, 0.74);
-    text-align: center;
-}
-
-#titulo {
-    text-align: left;
-}
-
-#segunda {
-    text-align: left;
-}
-
-#tercera {
-    text-align: left;
-}
-
-
-.tabla2 {
-    margin: 0 2;
-    width: 20cm;
-    border-collapse: collapse;
-}
-
-.columna2 {
-    font-size: medium;
-}
-
-.titulobk {
-    color: aliceblue;
-    text-align: left;
-    margin-left: 7rem;
-}
-
-.blackjack {
-    padding-top: 3rem;
-    margin-left: 5rem;
-}
-
-.columnabk{
-    padding-left:5rem;
-}
-
-.texto1 {
-    text-align: center;
-}
-
-.foto1 {
-    width: 20rem;
-    border-radius: 5px;
-}
-
-.tragamonedas {
-    padding-top: 2rem;
-    margin-left: 50rem;
-}
-
-
-
-.titulotg {
-    color: aliceblue;
-    text-align: left;
-    margin-left: 45rem;
-}
-
-.foto2 {
-    width: 21rem;
-    border-radius: 5px;
-}
-
-.tablabk {
-    padding-top:1px;
-}
-
-.opciones{
-    text-align:center;
-    color:antiquewhite;
-}
-
-.mesa {
-   
-    margin-left: 2,5rem;
-}
-
-.espacio{
-    padding-left : 5rem;
-}
-
-.foto3 {
-    width: 500px;
-}
-
-
-#mesa-cartas img {
-    height: 175px;
-    width: 125px;
-    margin: 1px;
-}
-
-#usuario-cartas img {
-    height: 175px;
-    width: 125px;
-    margin: 1px;
-}
-
-#hit {
-    font-family: 'Montserrat', sans-serif;
-    width: 100px;
-    height: 30px;
-    color: antiquewhite;
-    border-radius: 12px;
-    border-color: rgba(95, 6, 6, 0);
-    font-size: medium;
-    background-color: rgb(95, 6, 6);
-}
-
-#stay {
-    font-family: 'Montserrat', sans-serif;
-    width: 100px;
-    height: 30px;
-    border-color: rgba(95, 6, 6, 0);
-    color: antiquewhite;
-    border-radius: 12px;
-    font-size: medium;
-    background-color: rgb(95, 6, 6);
-}
-
-section {
-    text-align: center;
-    color: antiquewhite;
     
 }
 
-.spam {
-    opacity: 0;
-}
 
-#hit:hover {
-    transition: all 0.8s;
-    background-color: rgb(170, 13, 13);
-}
-#stay:hover {
-    transition: all 0.8s;
-    background-color: rgb(170, 13, 13);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#hit {*/
-    /* width: 150px;
-    height: 30px;
-    background-color: rgb(95, 6, 6);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    user-select: none;
-    cursor: pointer;
-    margin: auto;
-    top: 30px;*/
-/*}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.play {
-    font-family: 'Montserrat', sans-serif;
-    width: 40px;
-    height: 20px;
-    color: black;
-    background-color: greenyellow;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: medium;
-    border-color: rgba(250, 235, 215, 0);
-    user-select: none;
-    cursor: pointer;
-    margin: auto;
-    top: 30px;
-}
- .play:hover {
-        transition: all 0.8s;
-        background-color: black;
-        color:antiquewhite;
-    }
-
-#hidden {
-    box-shadow: 2px 1px 7px rgb(255, 255, 255);
-}
-
-
-.tabla3{
-    margin: 0 auto;
-}
-
-.tabla3 th {
-    padding-top:3rem;
-    padding-left:2rem;
-}
-
-.cajaApuesta {
-    background-color: #1b1b1b;
-    color: rgb(167, 164, 164);
-    border-collapse: collapse;
-    border-radius: 7px;
-    opacity: 0.8;
-}
-
-.cajaApuesta:hover {
-        transition: all 0.5s ease;
-        box-shadow: 1px 1px 7px rgb(255, 255, 255);
-    }*/
-
-
-
-
-
-/* tragamonedas */
-/*img {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-#juego2 {
-    padding-top:5rem;
-    font-family: "Pacifico";
-    margin: auto;
-    width: 550px;
-}
- 
-#linea1 {
-    display: flex;
-    align-items: center;
-    margin: 10px 0 0 19px;
-}
-
-#credito {
-    color: rgba(239, 184, 16, 0.7);
-    font-size: 1.5em;
-}
-
-#dinero {
-    font-size: 2.5em;
-}
-
-#pesos {
-    font-size: 1.4em;
-}
-
-#tirar {
-    width: 150px;
-    height: 30px;
-    background-color: rgb(95, 6, 6);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    user-select: none;
-    cursor: pointer;
-    position: left;
-    margin: auto;
-    top: 30px;
-}
-
-#capsula {
-    height: 100px;
-}
-
-
-#tirar:hover {
-    transition: all 0.8s;
-    background-color: rgb(170, 13, 13);
-}
-
-#titulo3 {*/
-    /*padding-top:5rem;*/
-    /*text-align: center;
-    color: antiquewhite;
-}
-
-#ventanas {
-    display: flex;
-    justify-content: space-around;
-    height: 200px;
-}
-
-.ventana {
-    width: 175px;
-}
-
-.imagen {
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#velo {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.6);
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-}
-
-#cruz {
-    width: 30px;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-    cursor: pointer;
-}
-
-#cuadro_mensaje {
-    border: 3px solid rgb(0, 0, 0);
-    width: 500px;
-    border-radius: 12px;
-    position: relative;
-    height: 100px;
-    background-color: white;
-    text-align: center;
-}
-
-#mensaje {
-    font-size: 1.6em;
-    color: rgb(0, 0, 0);
-}
-
-.subtitulo {
-    color: black;
-}*/
-
-/*no me lo toma*/ 
-
-/*footer {
-   
-    color:antiquewhite;
-    margin-top:5rem;
-    background-color:black;
-    padding-top:1rem;
-    padding-bottom:3rem;
-}
-
-#minombre {
-    text-align:center;
-    color:green;
-    text-decoration:double;
-    font-size:x-large;
-    
+/*.fondo {
+    background-color: rgba(29, 28, 28, 0.89);
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 4px;
 }*/

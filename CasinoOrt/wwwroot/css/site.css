@@ -63,14 +63,6 @@ body {*/
   /* Margin bottom by footer height */
   /*margin-bottom: 60px;
 }*/
-/*.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;*/ /* Vertically center the text there */
-/*}*/
-
 
 
 
@@ -84,7 +76,7 @@ html {
 
 header {
     background-color: black;
-    position:fixed;
+  /*  position:fixed;*/
     /*margin-bottom:30rem;*/
     padding-right:100rem;
 }
@@ -121,7 +113,36 @@ body {
 .link {
     color: aliceblue;
     text-decoration: none;
+    font-size:medium;
+
 }
+    .link:hover {
+        color: #750a06;
+        opacity: 0.8;
+        font-size: large;
+        transition: 0.5s ease;
+        text-decoration: none;
+      
+    }
+
+
+
+#link {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: medium;
+}
+
+    #link:hover {
+        color: #750a06;
+        opacity: 0.8;
+        font-size: large;
+        transition: 0.5s ease;
+        
+        text-decoration: none;
+    }
+
+
 
 th {
     font-size: medium;
@@ -143,9 +164,13 @@ th {
 
 
 .tabla2 {
-   /* margin: 0 2;*/
-    width: 20cm;
+    margin: 0 auto;
+    /* border: outset 1px rgba(169, 14, 9, 0.678); */
+    /*   border: outset 1px rgba(255, 255, 255, 0.486); */
+    width: 800px;
     border-collapse: collapse;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.055);
 }
 
 .columna2 {
@@ -246,7 +271,7 @@ th {
     background-color: rgb(95, 6, 6);
 }
 
-#stay {
+    #stay {
     font-family: 'Montserrat', sans-serif;
     width: 100px;
     height: 30px;
@@ -348,7 +373,6 @@ section {
         transition: all 0.5s ease;
         box-shadow: 1px 1px 7px rgb(255, 255, 255);
     }
-
 
 
 
@@ -475,17 +499,16 @@ img {
 /*no me lo toma*/
 
 footer {
-    color: antiquewhite;
     margin-top: 5rem;
     background-color: black;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
 }
 
-footer{
+/*footer{
     margin-top:20rem;
     color:antiquewhite;
-}
+}*/
 
 #minombre {
     text-align: center;
@@ -494,12 +517,12 @@ footer{
     font-size: x-large;
 }
 
-
-
-
-
-
-
+#cabecera{
+    padding-top:5rem;
+    text-align:left;
+    margin : 0 auto;
+    
+}
 
 
 

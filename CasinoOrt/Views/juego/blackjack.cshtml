@@ -1,5 +1,26 @@
 ﻿
 
+<section id="cabecera">
+
+    <table class="tabla2">
+
+        <tr class="fila">
+            <th class="columna2" id="mismoFondo">
+                <a id="link" class="navbar-brand" asp-area="" asp-controller="juego" asp-action="paginaPrincipal">Inicio</a>
+                @*<a id="mismaPag" class="link">Home</a>*@
+            </th>
+            <th class="columna2">
+                <a id="link" asp-area="" asp-controller="juego" asp-action="blackjack"> BlackJack</a>
+            </th>
+            <th class="columna2">
+                <a id="link" asp-area="" asp-controller="juego" asp-action="tragamoneda"> Tragamonedas</a>
+            </th>
+            <th class="columna2">
+                <a id="link" class="link">Premios</a>
+            </th>
+        </tr>
+    </table>
+</section>
 <br />
 <br />
 <section id="juego">
@@ -31,7 +52,7 @@
 
     <lable>Apuesta :<span id="usuario-suma"></span></lable>
     <input class="cajaApuesta" type="number" placeholder="Ingrese monto de la apuesta" />
-
+    <br /><br />
 </section>
 
 
