@@ -1,4 +1,5 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿
+// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
@@ -16,14 +17,14 @@ var mazo;
 var canHit = true; //allows the player (you) to draw while yourSum <= 21
 
 
- //document.getElementById("botonBK").addEventListener("click", play);
+//document.getElementById("botonBK").addEventListener("click", play);
 
 
 function play() {
     buildDeck();
     shuffleDeck();
     startGame();
-   /* document.getElementById("usuario-cartas").append("       MIS CARTAS");*/
+    /* document.getElementById("usuario-cartas").append("       MIS CARTAS");*/
 }
 
 //window.onload = function () {
@@ -35,10 +36,10 @@ function play() {
 //}
 //    /*onload de tragamonedas*/
 
-    //var credito = Math.floor(Math.random() * 4) + 9;
-    //var imagenes = ["1.png", "2.png", "4.png", "5.png", "7.png", "8.png"];
-    //var premios = [3, 2, 3, 7, 2, 8];
-    //var numeros_actuales = [];
+//var credito = Math.floor(Math.random() * 4) + 9;
+//var imagenes = ["1.png", "2.png", "4.png", "5.png", "7.png", "8.png"];
+//var premios = [3, 2, 3, 7, 2, 8];
+//var numeros_actuales = [];
 
 
 function buildDeck() {
@@ -163,7 +164,7 @@ function quedarse() {
     document.getElementById("usuario-suma").innerText = usuarioSuma;
     // mensaje del resultado
     document.getElementById("results").innerText = message;
-    
+
 }
 
 function valorCarta(card) {
@@ -207,13 +208,13 @@ var premios = [];
 var numeros_actuales = [];
 
 function play2() {
-     credito = Math.floor(Math.random() * 30) + 10;
-     imagenes = ["1.png", "2.png", "4.png", "5.png", "7.png", "8.png"];
+    credito = Math.floor(Math.random() * 30) + 10;
+    imagenes = ["1.png", "2.png", "4.png", "5.png", "7.png", "8.png"];
     /* premios = [3, 2, 3, 7, 2, 8];*/
     premios = [24, 12, 24, 56, 12, 84];
-     numeros_actuales = [];
+    numeros_actuales = [];
     inicio();
-   
+
 }
 
 //window.onload = inicio;
@@ -227,7 +228,7 @@ function inicio() {
     document.getElementById("tirar").onclick = lanzar_inicio;
     document.getElementById("cruz").onclick = cerrar;
     actualizar();
-   
+
 }
 
 function lanzar_inicio() {
@@ -303,7 +304,7 @@ function verficar() {
         alert("Ingresando al sistema. Bienvenido/a " + usuario);
     }
     else {
-        alert("Los datos son incorrectos, revise los campos o registre en la aplicacion");
+        alert("Datos incorrectos o vacios, complete los campos o registrese en la aplicacion");
     }
 
 
@@ -323,21 +324,32 @@ function validarUsuario(usuario, clave) {
 
 
 
+///LOGIN/
+
+//const input1 = document.getElementById('usuario');
+//const input2 = document.getElementById('password');
+
+//input1.required = "required";
+//input2.required = "required";
+//input1.minLength = 4;
+//input1.maxLength = 12;
+//input2.minLength = 3;
+//input2.maxLength = 12;
+
+
+//function verficar() {
+
+//    var usuario = input1.value;
+//    var clave = input2.value;
+
+//    if (usuario == "eltrucho" && clave == "1234" || usuario == "paloF" && clave == "555") {
+//        alert("Ingresando al sistema. Bienvenido/a " + usuario);
+//    }
+//    else {
+//        alert("Los datos son incorrectos, revise los campos o registre en la aplicacion");
+//    }
+//}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CREAR USUARIO*/

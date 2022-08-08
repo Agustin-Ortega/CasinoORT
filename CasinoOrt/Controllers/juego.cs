@@ -20,6 +20,7 @@ namespace CasinoOrt.Controllers
 
         public IActionResult paginaPrincipal()
         {
+            
             return View();
         }
     }

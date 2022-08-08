@@ -19,7 +19,7 @@
                                             <br />
                                             <label class="loginTitulo" asp-for="nombreUsuario" >Nombre de Usuario</label>
                                             <br />
-                                            <input class="loginCaja" asp-for="nombreUsuario" placeholder="ingrese nombre de usuario">
+                                            <input id="nombreUs" class="loginCaja" asp-for="nombreUsuario" placeholder="ingrese nombre de usuario">
                                             <span asp-validation-for="nombreUsuario" class="text-danger"></span>
                                         </div>
                                     </th>
@@ -31,7 +31,7 @@
                                         <div class="form-group">
                                             <label class="loginTitulo" asp-for="contraseña">Contraseña</label>
                                             <br />
-                                            <input type="password" class="loginCaja" asp-for="contraseña"  placeholder="ingrese su contraseña"/>
+                                            <input id="contrasena" type="password" class="loginCaja" asp-for="contraseña"  placeholder="ingrese su contraseña"/>
                                             <span asp-validation-for="contraseña" class="text-danger"></span>
 
                                         </div>
@@ -43,7 +43,7 @@
                                         <div class="form-group">
                                             <label class="loginTitulo" asp-for="nombre">Nombre</label>
                                             <br />
-                                            <input class="loginCaja" asp-for="nombre" placeholder="ingrese nombre"/>
+                                            <input  id="nomb" class="loginCaja" asp-for="nombre" placeholder="ingrese nombre"/>
                                             <span asp-validation-for="nombre" class="text-danger"></span>
                                         </div>
                                         <br />
@@ -54,7 +54,7 @@
                                         <div class="form-group">
                                             <label class="loginTitulo" asp-for="monto" >Monto</label>
                                             <br />
-                                            <input class="loginCaja" asp-for="monto" placeholder="ingrese el monto"/>
+                                            <input id="monto" class="loginCaja" asp-for="monto" placeholder="ingrese el monto"/>
                                             <span asp-validation-for="monto" class="text-danger"></span>
                                         </div>
                                     </th>
@@ -66,7 +66,7 @@
 
                                         <div class="form-group">
 
-                                            <input id="loginBoton" type="submit" value="Crear" class="btn btn-primary" />
+                                            <input id="loginBoton" type="submit" asp-controller="juego" asp-action="paginaPrincipal" value="Crear" onclick="verificaCampos()" class="btn btn-primary" />
 
                                         </div>
                                     </th>

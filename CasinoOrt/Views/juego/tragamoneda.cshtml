@@ -66,11 +66,13 @@
             <div id="dinero"></div>
             <div id="tirar">Tirar</div>
 
-            <form asp-controller="Usuarios" asp-action="Edit">
-                <label>Apuesta :<span></span></label>
-                <input class="cajaApuesta" type="number" placeholder="Ingrese monto de la apuesta" />
-                <button type="submit">Finalizar</button>
-            </form>
+            @*no se utiliza, se precisa setear el valor de la apuesta en el monto del jugador*@
+        <form asp-controller="Usuarios" asp-action="Edit">
+            <label>Apuesta :<span></span></label>
+            <input class="cajaApuesta" type="number" placeholder="Ingrese monto de la apuesta" />
+            @*<button id="loginBoton" type="submit">Finalizar</button>*@
+            <button id="loginBoton" type="submit" asp-controller="juego" asp-action="paginaPrincipal">Finalizar</button>
+        </form>
 
         </div>
     </section>

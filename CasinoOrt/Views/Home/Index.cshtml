@@ -1,13 +1,10 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@{ ViewData["Title"] = "Home Page"; }
 
 
 <section>
     @*<div class="text-center">
             <br /><br /><br /><br /><br />
             <h1 class="display-4" style="color: white">Welcome</h1>
-            <h2>HOLA COMO ESTAS</h2>
             <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
         </div>*@
 </section>
@@ -20,9 +17,9 @@
         <tr>
             <th>
                 <img id="fotoLogo" src="/css/img/cartas/A-C.png" />
-                
+
             </th>
-            
+
             <th>
                 <h1 class="tituloCasino">Bienvenidos al Casino ORT</h1>
             </th>
@@ -40,7 +37,7 @@
 
                 <th>
                     <div>
-                        <label id="tituloUsuario" class="loginTitulo" for="usuario"> Usuario</label>
+                        <label class="loginTitulo" for="usuario"> Usuario</label>
                         <br>
                         <input class="loginCaja" type="text" id="usuario" name="usuario" placeholder="Ingrese su nombre de usuario" />
                     </div>
@@ -51,7 +48,7 @@
                 <th>
                     <br><br />
                     <div>
-                        <label id="password" class="loginTitulo" for="password">Password</label>
+                        <label class="loginTitulo" for="password">Password</label>
                         <br>
                         <input class="loginCaja" type="password" id="password" name="password" placeholder="Ingrese su password" />
                     </div>
@@ -62,7 +59,7 @@
                 <th>
                     <br><br />
                     <div id="centrar">
-                        <button id="loginBoton" type="submit" onclick="verficar()">Ingresar</button>
+                        <button id="loginBoton" type="submit" onclick="verficar()" asp-controller="juego" asp-action="paginaPrincipal">Ingresar</button>
                     </div>
                     <br />
 
